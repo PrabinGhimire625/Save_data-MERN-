@@ -4,7 +4,12 @@ require('dotenv').config();
 const db = require('./db');
 const cors = require('cors');
 
-app.use(cors());  // connect backend and fontend
+app.use(cors({
+  origin:["http://localhost:5173"],
+   methods: ["GET","POST"],
+   credentials:true
+
+}));  // connect backend and fontend
 app.use(express.json());  //parses incoming requests with JSON payloads. 
 
 

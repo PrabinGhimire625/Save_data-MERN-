@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import Home from "./../Home/Home"
-import Signup from "./../signup/Signup";
-import Login from "./../login/login";
+import Home from "./../Home/Home";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -26,8 +24,6 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <Home/>
-
     </>
   );
 }
